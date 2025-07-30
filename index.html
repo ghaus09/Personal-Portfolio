@@ -1,0 +1,201 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ghaus Waheed | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --primary: #1e3a8a;
+      --accent: #2563eb;
+      --background: #f9fafb;
+      --text: #1f2937;
+      --card-bg: #ffffff;
+      --shadow: rgba(30, 58, 138, 0.1);
+      --border-radius: 12px;
+      --transition: 0.3s ease;
+    }
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: var(--background);
+      color: var(--text);
+    }
+    header {
+      background: linear-gradient(90deg, var(--primary), var(--accent));
+      color: white;
+      padding: 3rem 1rem;
+      text-align: center;
+      font-family: 'Montserrat', sans-serif;
+      box-shadow: 0 4px 12px var(--shadow);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
+    }
+    nav {
+      margin-top: 1rem;
+    }
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    section {
+      margin-bottom: 3rem;
+    }
+    h2 {
+      font-family: 'Montserrat', sans-serif;
+      border-bottom: 3px solid var(--accent);
+      padding-bottom: 0.5rem;
+      font-size: 2rem;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      background: var(--card-bg);
+      margin: 1rem 0;
+      padding: 1rem;
+      border-radius: var(--border-radius);
+      box-shadow: 0 4px 8px var(--shadow);
+    }
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      color: #6b7280;
+    }
+    a {
+      color: var(--accent);
+    }
+  
+/* Animations */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.project-link:hover {
+  color: #1d4ed8;
+  text-shadow: 0 0 5px rgba(37, 99, 235, 0.3);
+}
+
+li:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 12px rgba(30, 58, 138, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+nav a {
+  position: relative;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+</style>
+</head>
+<body>
+  <header>
+    <h1>Ghaus Waheed</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+Hi! I'm Ghaus, an aspiring computer science student with a passion for building creative, practical projects using Python, HTML, CSS, and JavaScript. I love learning and applying my knowledge to make things, from classic games to small tools and interactive web apps.
+
+
+This portfolio showcases what I've built so far, to my excitement for coding, problem-solving, and tech. I'm currently applying to university and looking forward to growing my skills in software development and computer science.</p>
+    </section>
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>Programming Languages: Python, JavaScript, C++</li>
+        <li>Web Development: HTML, CSS, JavaScript</li>
+        <li>Tools: Git, VS Code</li>
+      </ul>
+    </section>
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li><strong><a class="project-link" href="https://ghaus09.github.io/Personal-Portfolio/" target="_blank"../portfolio/index.html" target="_blank">Portfolio Website</a></strong><br />
+        This personal portfolio site you're viewing now!</li>
+
+        <li><strong><a class="project-link" href="https://ghaus09.github.io/Weather-Forecast-App/" target="_blank"../weather-app/weather-app.html" target="_blank">Weather Forecast App</a></strong><br />
+        An app that shows you the weather of a city you enter.</li>
+
+         <li><strong><a class="project-link" href="https://ghaus09.github.io/Password-Generator/" target="_blank"../password-generator/password-generator.html" target="_blank">Password Generator App</a></strong><br />
+        A simple JavaScript app that generates strong passwords based on user preferences.</li>
+
+        <li><strong><a class="project-link" href="https://ghaus09.github.io/Brick-Breaker-Game/" target="_blank"../Brick-Breaker-Game/index.html" target="_blank">Brick-Breaker-Game</a></strong><br />
+        A simple brick breaker game with score tracking keyboard controls and vibrant color schemes!</li>
+
+        <li><strong><a class="project-link" href="https://ghaus09.github.io/Snake-Game/" target="_blank"../snake-game/snake.html" target="_blank">Snake Game</a></strong><br />
+        Classic snake game with score tracking and keyboard controls.</li>
+
+        <li><strong><a class="project-link" href="https://ghaus09.github.io/Tic-Tac-Toe-Game/" target="_blank"../tic-tac-toe/tictactoe.html" target="_blank">Tic Tac Toe with AI</a></strong><br />
+        A two-player game where you play against a simple AI.</li>
+
+      </ul>
+    </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:ghausahmed530@gmail.com">ghausahmed530@gmail.com</a></p>
+      <p>GitHub: <a href="https://github.com/ghaus09" target="_blank">github.com/ghaus09</a></p>
+    </section>
+  </main>
+  <footer>&copy; 2025 Ghaus</footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const sections = document.querySelectorAll("section");
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("fade-in");
+      }
+    });
+  }, { threshold: 0.1 });
+  sections.forEach(section => observer.observe(section));
+});
+</script>
+
+</body>
+</html>
